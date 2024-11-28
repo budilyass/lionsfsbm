@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="LIONS FSBM - Organisation internationale de bénévoles dédiée au service communautaire"
+    />
+    <title>LIONS FSBM</title>
+    <link rel="stylesheet" href="../Stylesheets/Acceuil.css" />
+    <link rel="shortcut icon" href="../Assets/Icons/LIONS_CLUB_LOGO.png" /> 
+    <!-- Ajout du CDN Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="acceuil.html"><img id="icon" src="../Assets/Icons/LIONS_CLUB_LOGO.png" type="image/png" /><i class="fas fa-lion"></i> LIONS FSBM</a>
+        </div>
+        <button class="nav-toggle" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li>
+            <a href="about.html"><i class="fas fa-info-circle"></i> À propos</a>
+          </li>
+          <li>
+            <a href="stand.html"><i class="fas fa-shop"></i> Notre stand</a>
+          </li>
+          <li>
+            <a href="actions.html"><i class="fas fa-handshake-angle"></i> Actions</a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+          <li>
+            <a href="don.html" class="donation-button pulse"
+              ><i class="fas fa-circle-dollar-to-slot"></i> Faire un Don</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <video autoplay muted loop>
+          <source src="../Assets/Videos/LCIFStopMotion.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+          <h1>Bienvenue au Lions Club FSBM</h1>
+          <p>Ensemble pour servir notre communauté</p>
+          <a href="#mission" class="cta-button">Découvrir nos actions</a>
+        </div>
+      </section>
+
+      <section id="mission" class="mission-section">
+        <div class="container">
+          <h2 class="section-title">Notre Mission</h2>
+          <div class="cards-grid">
+            <div class="mission-card">
+              <div class="card-icon">
+                <i class="fas fa-heartbeat"></i>
+              </div>
+              <h3>Santé</h3>
+              <p>
+                Services de dépistage et campagnes de sensibilisation pour
+                améliorer la santé communautaire.
+              </p>
+              <a href="#" class="card-link"
+                >En savoir plus <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+
+            <div class="mission-card">
+              <div class="card-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h3>Éducation</h3>
+              <p>
+                Distribution de fournitures scolaires et bourses pour les
+                étudiants en difficulté.
+              </p>
+              <a href="#" class="card-link"
+                >En savoir plus <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+
+            <div class="mission-card">
+              <div class="card-icon">
+                <i class="fas fa-hand-holding-heart"></i>
+              </div>
+              <h3>Aide Humanitaire</h3>
+              <p>
+                Soutien aux communautés lors de catastrophes et aide à la
+                reconstruction.
+              </p>
+              <a href="#" class="card-link"
+                >En savoir plus <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="actions-section">
+        <div class="container">
+          <h2 class="section-title">Nos Actions Récentes</h2>
+          <div class="actions-grid">
+            <div class="action-item">
+              <div class="action-image">
+                <img
+                  src="../Assets/Pictures/000-pllotaqihnrlf712xxnwguue6nu2xtqejc4pi6n69c.jpg"
+                  alt="Campagne diabète"
+                />
+                <div class="action-overlay"></div>
+              </div>
+              <div class="action-content">
+                <h3>Campagne Diabète</h3>
+                <p class="action-description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aliquid, eligendi.
+                </p>
+                <a href="#" class="action-link"><span>En savoir plus</span></a>
+              </div>
+            </div>
+
+            <div class="action-item reverse">
+              <div class="action-image">
+                <img
+                  src="../Assets/Pictures/6306445acb0f3_maxnewsworldfive536021.jpg"
+                  alt="Distribution fournitures"
+                />
+                <div class="action-overlay"></div>
+              </div>
+              <div class="action-content">
+                <h3>Rentrée Scolaire</h3>
+                <p class="action-description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aliquid, eligendi.
+                </p>
+                <a href="#" class="action-link"><span>En savoir plus</span></a>
+              </div>
+            </div>
+
+            <div class="action-item">
+              <div class="action-image">
+                <img src="../Assets/Pictures/Secours-marocains.jpg" alt="Aide humanitaire" />
+                <div class="action-overlay"></div>
+              </div>
+              <div class="action-content">
+                <h3>Aide d'Urgence</h3>
+                <p class="action-description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aliquid, eligendi.
+                </p>
+                <a href="#" class="action-link"><span>En savoir plus</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-section">
+        <div class="container">
+          <h2 class="section-titlestats">Un impact local</h2>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <i class="fas fa-users"></i>
+              <h3>1000+</h3>
+              <p>Bénéficiaires</p>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-hand-holding-medical"></i>
+              <h3>50+</h3>
+              <p>Actions Menées</p>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-globe-africa"></i>
+              <h3>10+</h3>
+              <p>Régions Couvertes</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="social-section">
+        <div class="container">
+          <h2 class="section-title">Suivez-nous</h2>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/lions_fsbm" class="social-icon instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/company/lionsclubfsbm/" class="social-icon linkedin"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://www.tiktok.com/@lions.club.fsbm" class="social-icon tiktok"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <i class="fas fa-lion"></i>
+            <h3>LIONS FSBM</h3>
+          </div>
+          <p>&copy; 2024 LIONS FSBM - Tous droits réservés</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelector(".nav-toggle").addEventListener("click", () => {
+        document.querySelector(".nav-menu").classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
