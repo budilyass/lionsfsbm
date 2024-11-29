@@ -545,7 +545,7 @@ button:focus {
     background-size: cover;
 }
 
-/* Hover */
+/* Hover de chaque élément */
 .action-item > .action-content:hover > .action-shots { 
     transition: opacity 0.3s ease-in-out 0ms;
     opacity: 0.02;
@@ -873,5 +873,43 @@ button:focus {
     * {
         animation: none !important;
         transition: none !important;
+    }
+
+    .hero-content > h1 {
+        color: var(--jaune);
+    }
+
+    .action-shots > img { 
+        width: calc(100vw / 3);
+    }
+
+    .action-content:hover > #hrose {
+        color: rgba(207, 52, 207, 1); 
+        -webkit-text-stroke: rgba(207, 52, 207, 1) 0px;
+    }
+
+    .action-content:not(:hover) > #hrose {
+        color: rgba(207, 52, 207, 0.09); 
+        -webkit-text-stroke: rgba(207, 52, 207, 1) 2px;
+    }
+
+    .action-content:hover > h3 {
+        color: rgba(249,201,17, 1);
+        -webkit-text-stroke: rgba(249,201,17, 1) 0px;
+    }
+
+    .action-content:not(:hover) > h3 {
+        color: rgba(249,201,17, 0.09);
+        -webkit-text-stroke: rgba(249,201,17, 1) 2px;
+    }
+
+    .action-content:hover > #head6 {
+        color: rgba(207, 52, 76, 1); 
+        -webkit-text-stroke: rgba(207,52,76, 1) 0px;
+    }
+
+    .action-content:not(:hover) > #head6 {
+        color: rgba(207, 52, 76, 0.09); 
+        -webkit-text-stroke: rgba(207,52,76, 1) 2px;
     }
 }
