@@ -1,193 +1,114 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;}
-html {
-    scroll-behavior: smooth;}
-body {
-    font-family:'Helvetica Neue', sans-serif;
-    font-size:100%;
-    background-color: #ffffff;
-    color: #093DAB;
-    text-align:center;}
-.header { /* Header & Navigation */
-    background-color:#ffffff;
-    color:#093DAB;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: var(--box-shadow);}
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;}
-.logo a {
-    color:#093DAB;
-    text-decoration: none;
-    font-size: 1.8rem;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-family: 'Trends', sans-serif;}
-.nav-menu {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    list-style: none;}
-.nav-menu a {
-    color: #093DAB;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: 500;
-    transition: var(--transition);}
-.nav-menu a:hover {
-    color:#F9C911;
-    text-decoration: underline;}
-.donation-button {
-    background-color:#F9C911;
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-    color: #093DAB;
-    transition: var(--transition);}
-.donation-button:hover {
-    background-color:#093DAB;
-    color:#ffffff;
-    transform:-3px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);}
-.nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    color:#093DAB;
-    cursor: pointer;}
-/* Effet Pulse sur le bouton de don */
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
+<!DOCTYPE html>
+<html lang="fr"> 
+<head>
+    <meta charset="utf-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Page de dons</title>
+    <link rel="shortcut icon" type="image/png" href=" ../Assets/Icons/LIONS_CLUB_LOGO.png">
+    <link rel="stylesheet" href="Stylesheets/Don.css">
+     <!-- Ajout de l'icône, stylesheet et du CDN "Font Awesome" -->
+    <link rel="stylesheet" href="../Stylesheets/Actions.css" />
+    <link rel="shortcut icon" href="../Assets/Icons/LIONS_CLUB_LOGO.png" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+     <header class="header">
+      <!-- Barre de navigation -->
+      <nav class="navbar">
+      <!-- Logo du club -->
+        <div class="logo">            
+          <a href="acceuil.html"><img id="icon" src="../Assets/Icons/LIONS_CLUB_LOGO.png." type="image/png" /><i class="fas fa-lion"></i> LIONS FSBM</a>
+        </div>
+      <!-- Toggle de la barre pour le mobile -->
+        <button class="nav-toggle" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      <!-- Liens d'autres pages -->
+        <ul class="nav-menu">
+          <li>
+            <a href="about.html"><i class="fas fa-info-circle"></i> À propos</a>
+          </li>
+          <li>
+            <a href="stand.html"><i class="fas fa-shop"></i> Notre stand</a>
+          </li>
+          <li>
+            <a href="actions.html"><i class="fas fa-handshake-angle"></i> Actions</a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+          <li>
+            <a href="don.html" class="donation-button pulse"
+              ><i class="fas fa-circle-dollar-to-slot"></i> Faire un Don</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <section class="container1">
+            <h1><u> Zone de Don</u></h1>
+            <div class="container2"> 
+                <div class="container3" "> 
+                  <br>
+                    <h2><u>Dons en ligne</u></h2>
+                  <br>
+                    <h3>Veuillez trouver ci-dessous les coordonnées bancaires (RIB) pour le virement</h3>
+                  <br>
+                    <h4>007780001324530040106726</h4>
+                  <br>
+                    <h5>S'il vous plaît, si vous rencontrez un problème, n'hésitez pas à nous contacter par e-mail ou par téléphone</h5>
+                  <br>
+                    <h6>
+                          E-MAIL: <a href="mailto:ayamabchour115@gmail.com">ayamabchour115@gmail.com</a>
+                          TÉLÉPHONE: <a href="tel:+21263444801">+21263444801</a>
+                    </h6> 
+                </div>
 
-    50% {
-        transform: scale(1.1);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-.pulse {
-    animation: pulse 2s infinite;
-}
-
-h1 {
-    color: #8B2994; 
-    margin-top: 10px;
-}
-main {
-    padding: 20px;
-}
-.container h2 {
-    color:#050404;
-}
-.container1 {
-    background-color: #093DAB; 
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 10px #ffffff;
-}
-.container2 {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-.container3 {
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 10px #ffffff;
-    width: 40%; 
-}
-.container3 h3 {
-    color:#050404;
-}
-.container3 h4 {
-    color:#8B2994;
-}
-.container3 h5 {
-    color:#F9C911;
-}
-.container3 h6 {
-    color:#050404;
-}
-/* Social Section */
-.social-section {
-    padding: 5rem 0;
-    background-color:#ffffff;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
-    margin-top: 2.5rem;
-}
-
-.social-icon {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:#ffffff;
-    font-size: 2rem;
-    transition: var(--transition);
-}
-
-.social-icon:hover {
-    transform:-5px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.social-icon.facebook:hover {
-    background: #1877f2;
-}
-
-.social-icon.twitter:hover {
-    background: #1da1f2;
-}
-
-.social-icon.instagram:hover {
-    background: #e4405f;
-}
-
-.social-icon.linkedin:hover {
-    background: #0077b5;
-}
-.footer {
-    color: #ffffff;
-    padding: 3rem 0;
-    background-color: #093DAB;
-}
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    text-align: center;
-}
-.footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1.8rem;
-}
-.footer-logo i {
-    color:#F9C911;
-}
+                <div class="container3"> 
+                  <br>
+                    <h2><u>Dons physiques</u></h3>
+                  <br>    
+                    <h3>Nous vous remercions de votre volonté de contribuer en biens matériels tels que de la nourriture, des vêtements et des produits de première nécessité. Voici comment vous pouvez faire un don :</h3>
+                  <br>
+                    <h4>vous devrez nous contacter pour convenir d'un arrangement où vous pourrez faire des dons physiques</h4>
+                  <br>
+                    <h5>veuillez nous contacter pour tout don physique ou toute question supplémentaire</h5>
+                  <br>
+                    <h6>
+                          E-MAIL: <a href="mailto:ayamabchour115@gmail.com">ayamabchour115@gmail.com</a>
+                          TÉLÉPHONE: <a href="tel:+21263444801">+21263444801</a>
+                    </h6> 
+                </div>
+            </div>         
+        </section>
+        <section class="social-section">
+            <div class="container">
+                <h2 class="section-title">Suivez-nous</h2>
+                <div class="social-icons">
+                <a href="https://www.instagram.com/lions_fsbm" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/lionsclubfsbm/" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.tiktok.com/@lions.club.fsbm" class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+     <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <i class="fas fa-lion"></i>
+            <h3>LIONS FSBM</h3>
+          </div>
+          <p>&copy; 2024 LIONS FSBM - Tous droits réservés</p>
+        </div>
+      </div>
+    </footer>
+<!-- Un script simple pour la barre de navigation -->
+    <script>
+      document.querySelector(".nav-toggle").addEventListener("click", () => {
+        document.querySelector(".nav-menu").classList.toggle("active");
+      });
+    </script>
+</body>
+</html>    
