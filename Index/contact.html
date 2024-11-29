@@ -8,9 +8,9 @@
       content="LIONS FSBM - Organisation internationale de bénévoles dédiée au service communautaire"
     />
     <title>LIONS FSBM</title>
+    <link rel="stylesheet" href="../Stylesheets/Acceuil.css" />
     <link rel="stylesheet" href="../Stylesheets/Contact.css" />
     <link rel="shortcut icon" href="../Assets/Icons/LIONS_CLUB_LOGO.png" /> 
-    <!-- Ajout du CDN Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -47,54 +47,50 @@
         </ul>
       </nav>
     </header>
+    <div class="content">
+      <h1>Contact</h1>
+      <div class="row">
+        <a href="https://wa.me/212646688103" target="_blank" class="col" style="text-decoration: none;">
+          <div class="icon"><i class="fab fa-whatsapp"></i></div>
+          <h2 class="subtitle">WhatsApp</h2>
+          <p class="desc">+212 6 46 68 81 03</p>
+        </a>
+        <a href="mailto:assiaouari00@gmail.com" target="_blank" class="col" style="text-decoration: none;">
+          <div class="icon"><i class="fas fa-envelope"></i></div>
+          <h2 class="subtitle">Email</h2>
+          <p class="desc">assiaouari00@gmail.com</p>
+        </a>
+      </div>
+    </div>
 
-    <main>
-      <section class="hero">
-        <video autoplay muted loop>
-          <source src="../Assets/Videos/LCIFStopMotion.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div class="hero-content">
-          <h1>Bienvenue au Lions Club FSBM</h1>
-          <p>Ensemble pour servir notre communauté</p>
-          <a href="#mission" class="cta-button">Découvrir nos actions</a>
-        </div>
-      </section>
-
-      <section class="social-section">
-        <div class="container">
-          <h2 class="section-title">Suivez-nous</h2>
-          <div class="social-icons">
-            <a href="https://www.instagram.com/lions_fsbm" class="social-icon instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://www.linkedin.com/company/lionsclubfsbm/" class="social-icon linkedin"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a href="https://www.tiktok.com/@lions.club.fsbm" class="social-icon tiktok"
-              ><i class="fa-brands fa-tiktok"></i
-            ></a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
+    <section class="social-section">
       <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <i class="fas fa-lion"></i>
-            <h3>LIONS FSBM</h3>
-          </div>
-          <p>&copy; 2024 LIONS FSBM - Tous droits réservés</p>
+        <h2 class="section-title">Suivez-nous</h2>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/lions_fsbm" class="social-icon instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/company/lionsclubfsbm/" class="social-icon linkedin"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://www.tiktok.com/@lions.club.fsbm" class="social-icon tiktok"
+            ><i class="fab fa-tiktok"></i
+          ></a>
         </div>
       </div>
-    </footer>
-
-    <script>
-      document.querySelector(".nav-toggle").addEventListener("click", () => {
-        document.querySelector(".nav-menu").classList.toggle("active");
-      });
-    </script>
+    </section>
   </body>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <i class="fas fa-lion"></i>
+          <h3>LIONS FSBM</h3>
+        </div>
+        <p>&copy; 2024 LIONS FSBM - Tous droits réservés</p>
+      </div>
+    </div>
+  </footer>
+
 </html>
