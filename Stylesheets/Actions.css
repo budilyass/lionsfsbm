@@ -425,7 +425,7 @@ button:focus {
     top: 0;
     width: 100vw;
     height: fit-content;
-    animation: slider 20s ease-out infinite;
+    animation: slider 20s linear infinite;
 }
 
 .action-content > video { 
