@@ -196,6 +196,17 @@ button:focus {
     position: relative;
 }
 
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: var(--jaune);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .social-section {
     padding: 5rem 0;
     background-color: var(--blanc);
